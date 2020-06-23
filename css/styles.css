@@ -3,9 +3,53 @@ CSS stylesheet for Blooskyn Tattoo website
 *****************************************/
 
 /* || General styles */
+body {
+  margin: 20px 0;
+  background-color: #313131;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+h1 {
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+}
+.content-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
 
-
-
-/* || Other styles */
+/* || Navigation bar */
+header > .flex-container {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+}
+header h1 {
+  flex: 0 0 auto;
+  color: #fff
+}
+nav {
+  flex: 1 1 auto;
+}
+nav .flex-container {
+  padding: 0;
+  margin: 0;    
+  width: 100%;
+  display: inline-flex;
+  justify-content: flex-end;
+  flex-flow: wrap;
+}
+nav li {
+  flex: 0 0 auto;
+}
+nav a {
+  margin: 0 10px;
+  padding: 0 20px;
+  font-size: x-large;
+}
 
 
