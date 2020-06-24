@@ -20,10 +20,11 @@ ul {
 .content-wrapper {
   width: 80%;
   margin: 0 auto;
+  max-width: 1000px;
 }
 
 /* || Navigation bar */
-header > .flex-container {
+.flex-container-header {
   width: 100%;
   display: inline-flex;
   justify-content: space-between;
@@ -35,11 +36,11 @@ header h1 {
 nav {
   flex: 1 1 auto;
 }
-nav .flex-container {
+.flex-container-nav {
   padding: 0;
   margin: 0;    
   width: 100%;
-  display: inline-flex;
+  display: flex;
   justify-content: flex-end;
   flex-flow: wrap;
 }
