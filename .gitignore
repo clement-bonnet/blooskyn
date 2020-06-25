@@ -2,4 +2,4 @@
 venv/
 
 # cpython compilations
-__pycache__
+__pycache__/
