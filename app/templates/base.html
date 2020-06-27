@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
     {% block head %}
       {% block meta %}
+        <meta charset="UTF-8">
+        <meta name="application-name" content="Blooskyn Tattoo">
+        <meta name="author" content="Clément Bonnet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
       {% endblock %}
-      <meta name="application-name" content="Blooskyn Tattoo">
-      <meta name="author" content="Clément Bonnet">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      {% block title %}
-      {% endblock %}
+      {% block title %}{% endblock %}
       <!-- analytics script -->
-      {% block analytics %}
-      {% endblock %}
+      {% block analytics %}{% endblock %}
 
       <!-- stylesheets -->
       {% block stylesheet %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap">
       {% endblock %}
     {% endblock %}
   </head>
@@ -42,8 +42,7 @@
       </div>
     </header>
     <main class="content-wrapper">
-      {% block main %}
-      {% endblock %}
+      {% block main %}{% endblock %}
 
     </main>
     <footer class="content-wrapper">

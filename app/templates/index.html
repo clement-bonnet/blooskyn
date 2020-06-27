@@ -1,20 +1,24 @@
 {% extends "base.html" %}
 
 {% block head %}
+
   {% block meta %}
-  <meta name="keywords" content="blooskyn, tattoo, clara, tonnele, verjus, drawing">
-  <meta name="description" content="Personal website of Clara Tonnelé-Verjus that
-    contains pictures of tattoos she gave.">
+    {{ super() }}
+    <meta name="keywords" content="blooskyn, tattoo, clara, tonnele, verjus, drawing">
+    <meta name="description" content="Personal website of Clara Tonnelé-Verjus that
+      contains pictures of tattoos she gave.">
   {% endblock %}
+
   {% block title %}
     <title>Blooskyn Tattoo, Portfolio of Clara Tonnelé-Verjus</title>
   {% endblock %}
-  <!-- analytics script -->
+
   {% block analytics %}
   {% endblock %}
-  <!-- stylesheets -->
+
   {% block stylesheet %}
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
   {% endblock %}
 {% endblock %}
 

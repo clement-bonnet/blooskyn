@@ -1,11 +1,19 @@
 /*****************************************
 CSS stylesheet for Blooskyn Tattoo website
+-> base stylesheet
 *****************************************/
+
+/******************************************
+* Titles: font-family: 'Lobster', cursive;
+* Texts: font-family: 'Roboto', sans-serif;
+******************************************/
+
 
 /* || General styles */
 body {
   margin: 20px 0;
   background-color: #313131;
+  font-family: 'Roboto', sans-serif;
 }
 a {
   text-decoration: none;
@@ -13,6 +21,7 @@ a {
 }
 h1 {
   margin: 0;
+  font-family: 'Lobster', cursive;
 }
 ul {
   list-style-type: none;
