@@ -1,47 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="keywords" content="blooskyn, tattoo, clara, tonnele, verjus, drawing">
-    <meta name="description" content="Personal website of Clara Tonnelé-Verjus that
-      contains pictures of tattoos she gave.">
-    <meta name="application-name" content="Blooskyn Tattoo">
-    <meta name="author" content="Clément Bonnet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% extends "base.html" %}
+
+{% block head %}
+  {% block meta %}
+  <meta name="keywords" content="blooskyn, tattoo, clara, tonnele, verjus, drawing">
+  <meta name="description" content="Personal website of Clara Tonnelé-Verjus that
+    contains pictures of tattoos she gave.">
+  {% endblock %}
+  {% block title %}
     <title>Blooskyn Tattoo, Portfolio of Clara Tonnelé-Verjus</title>
-    <!-- analytics script -->
-
-    <!-- stylesheets -->
+  {% endblock %}
+  <!-- analytics script -->
+  {% block analytics %}
+  {% endblock %}
+  <!-- stylesheets -->
+  {% block stylesheet %}
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-  </head>
-  <body>
-    <header class="content-wrapper">
-      <div class="flex-container-header">
-        <h1>Blooskyn Tattoo</h1>
-        <nav>
-          <ul class="flex-container-nav">
-            <li>
-              <a href="">Home</a>
-            </li>
-            <li>
-              <a href="">About Me</a>
-            </li>
-            <li>
-              <a href="">Tattoos</a>
-            </li>
-            <li>
-              <a href="">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main class="content-wrapper">
+  {% endblock %}
+{% endblock %}
 
+  
+{% block main %}
 
-    </main>
-    <footer class="content-wrapper">
+{% endblock %}
 
-    </footer>
-  </body>
-</html>

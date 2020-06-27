@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    {% block head %}
+      {% block meta %}
+      {% endblock %}
+      <meta name="application-name" content="Blooskyn Tattoo">
+      <meta name="author" content="Clément Bonnet">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      {% block title %}
+      {% endblock %}
+      <!-- analytics script -->
+      {% block analytics %}
+      {% endblock %}
+
+      <!-- stylesheets -->
+      {% block stylesheet %}
+      {% endblock %}
+    {% endblock %}
+  </head>
+  <body>
+    <header class="content-wrapper">
+      <div class="flex-container-header">
+        <h1>Blooskyn Tattoo</h1>
+        <nav>
+          <ul class="flex-container-nav">
+            <li>
+              <a href="">Home</a>
+            </li>
+            <li>
+              <a href="">About Me</a>
+            </li>
+            <li>
+              <a href="">Tattoos</a>
+            </li>
+            <li>
+              <a href="">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="content-wrapper">
+      {% block main %}
+      {% endblock %}
+
+    </main>
+    <footer class="content-wrapper">
+
+    </footer>
+  </body>
+</html>
