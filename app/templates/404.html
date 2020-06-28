@@ -1,2 +1,28 @@
-<h1>ERROR 404</h1>
-<p><a href="{{ url_for('index') }}">return home</a></p>
+{% extends "base.html" %}
+
+{% block meta %}
+  {{ super() }}
+  <meta name="keywords" content="blooskyn, tattoo, clara, tonnele, verjus, drawing">
+  <meta name="description" content="Personal website of Clara Tonnelé-Verjus that contains pictures of tattoos she gave.">
+{% endblock %}
+
+{% block title %}
+  <title>Page Not Found</title>
+{% endblock %}
+
+{% block analytics %}
+{% endblock %}
+
+{% block stylesheet %}
+  {{ super() }}
+  <link href="{{ url_for('static', filename='css/404.css') }}" rel="stylesheet">
+{% endblock %}
+
+
+{% block main %}
+<section>
+    <strong>Page Not Found</strong>
+    <br>
+    <p><a href="{{ url_for('index') }}">Return Home</a></p>
+</section>
+{% endblock %}
