@@ -1,28 +1,40 @@
 {% extends "base.html" %}
 
-{% block head %}
-
-  {% block meta %}
-    {{ super() }}
-    <meta name="keywords" content="blooskyn, tattoo, clara, tonnele, verjus, drawing">
-    <meta name="description" content="Personal website of Clara Tonnelé-Verjus that
-      contains pictures of tattoos she gave.">
-  {% endblock %}
-
-  {% block title %}
-    <title>Blooskyn Tattoo, Portfolio of Clara Tonnelé-Verjus</title>
-  {% endblock %}
-
-  {% block analytics %}
-  {% endblock %}
-
-  {% block stylesheet %}
-    {{ super() }}
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
-  {% endblock %}
+{% block meta %}
+  {{ super() }}
+  <meta name="keywords" content="blooskyn, tattoo, clara, tonnele, verjus, drawing">
+  <meta name="description" content="Personal website of Clara Tonnelé-Verjus that
+    contains pictures of tattoos she gave.">
 {% endblock %}
 
-  
+{% block title %}
+  <title>Blooskyn Tattoo, Portfolio of Clara Tonnelé-Verjus</title>
+{% endblock %}
+
+{% block analytics %}
+{% endblock %}
+
+{% block stylesheet %}
+  {{ super() }}
+  <link href="{{ url_for('static', filename='css/index.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block header %}
+  <div class="top-image">
+    <img 
+      srcset="{{ url_for('static', filename='img/640_kristian-angelo-xyJZvUL4_TY-unsplash.jpg') }} 640w,
+              {{ url_for('static', filename='img/1920_kristian-angelo-xyJZvUL4_TY-unsplash.jpg') }} 1920w,
+              {{ url_for('static', filename='img/2400_kristian-angelo-xyJZvUL4_TY-unsplash.jpg') }} 2400w,
+              {{ url_for('static', filename='img/3936_kristian-angelo-xyJZvUL4_TY-unsplash.jpg') }} 3936w"
+      sizes=" (max-width: 800px) 640px,
+              (max-width: 2400px) 1920px,
+              (max-width: 3000px) 2400px,
+              3936px"
+      src="{{ url_for('static', filename='img/2400_kristian-angelo-xyJZvUL4_TY-unsplash.jpg') }}"
+      alt="Professional giving a tattoo in black and white">
+  </div>
+{% endblock %}
+
 {% block main %}
 
 {% endblock %}
