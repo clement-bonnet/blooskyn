@@ -32,7 +32,7 @@ ul {
 .content-wrapper {
   width: 80%;
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 1600px;
 }
 
 /* || Top bar */
@@ -82,4 +82,13 @@ nav {
   height: 100%;
 }
 
+/* || Top image */
+.top-image {
+  height: 400px;
+}
+.top-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
