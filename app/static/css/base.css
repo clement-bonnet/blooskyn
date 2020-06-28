@@ -33,20 +33,20 @@ ul {
   width: 80%;
   margin: 0 auto;
   max-width: 1600px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* || Top bar */
 .top-bar {
-  display: inline-flex;
   width:100%;
-  justify-content: flex-end;
 }
 .top-bar select {
   flex: 0 0 auto;
 }
 
 /* || Navigation bar */
-.flex-container-header {
+.top-header {
   width: 100%;
   display: inline-flex;
   justify-content: space-between;
