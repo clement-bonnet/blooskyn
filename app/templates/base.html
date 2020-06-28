@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    {% block head %}
-      {% block meta %}
-        <meta charset="UTF-8">
-        <meta name="application-name" content="Blooskyn Tattoo">
-        <meta name="author" content="Clément Bonnet">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      {% endblock %}
-      {% block title %}{% endblock %}
-      <!-- analytics script -->
-      {% block analytics %}{% endblock %}
-
-      <!-- stylesheets -->
-      {% block stylesheet %}
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap">
-      {% endblock %}
+    {% block meta %}
+      <meta charset="UTF-8">
+      <meta name="application-name" content="Blooskyn Tattoo">
+      <meta name="author" content="Clément Bonnet">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% endblock %}
+    {% block title %}{% endblock %}
+    <!-- analytics script -->
+    {% block analytics %}{% endblock %}
+    <!-- stylesheets -->
+    {% block stylesheet %}
+      <link href="{{ url_for('static', filename='css/base.css') }}" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap" rel="stylesheet">
+    {% endblock %}
+    <!-- icons -->
+    <link href="{{ url_for('static', filename='ico/apple-touch-icon.png') }}" rel="apple-touch-icon" sizes="180x180">
+    <link href="{{ url_for('static', filename='ico/favicon-32x32.png') }}" rel="icon" type="image/png" sizes="32x32">
+    <link href="{{ url_for('static', filename='ico/favicon-16x16.png') }}" rel="icon" type="image/png" sizes="16x16">
+    <script src="https://kit.fontawesome.com/275c924d1c.js" crossorigin="anonymous"></script>
+    <!-- web app manifest -->
+    <link href="site.webmanifest" rel="manifest">
   </head>
   <body>
     <header>
       <div class="top-bar">
-        <div class="content-wrapper">
+        <div class="content-wrapper flex-end">
           <select name="language">
             <option lang="en" value="EN">English</option>
             <option lang="fr" value="FR">Français</option>
           </select>
+          <a href="https://www.facebook.com/blooskyn"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/blooskyn_tattoo/"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
       <div class="top-header">
@@ -40,19 +46,7 @@
           </nav>
         </div>
       </div>
-      <div class="top-image">
-        <img 
-          srcset="{{ url_for('static', filename='img/640_kristian-angelo-xyJZvUL4_TY-unsplash.jpg') }} 640w,
-                  {{ url_for('static', filename='img/1920_kristian-angelo-xyJZvUL4_TY-unsplash.jpg') }} 1920w,
-                  {{ url_for('static', filename='img/2400_kristian-angelo-xyJZvUL4_TY-unsplash.jpg') }} 2400w,
-                  {{ url_for('static', filename='img/3936_kristian-angelo-xyJZvUL4_TY-unsplash.jpg') }} 3936w"
-          sizes=" (max-width: 800px) 640px,
-                  (max-width: 2400px) 1920px,
-                  (max-width: 3000px) 2400px,
-                  3936px"
-          src="{{ url_for('static', filename='img/2400_kristian-angelo-xyJZvUL4_TY-unsplash.jpg') }}"
-          alt="Professional giving a tattoo in black and white">
-      </div>
+      {% block header %}{% endblock %}
     </header>
     <main class="content-wrapper">
       {% block main %}{% endblock %}
