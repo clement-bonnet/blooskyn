@@ -3,6 +3,7 @@
   "name": "Blooskyn Tattoo",
   "short_name": "blooskyn_tattoo",
   "description": "Personal website of Clara Tonnelé-Verjus that contains pictures of tattoos she gave.",
+  "repository": "https://github.com/clement-bonnet/blooskyntattoo.com",
   "icons": [
     {
       "src": "static/ico/android-chrome-192x192.png",
