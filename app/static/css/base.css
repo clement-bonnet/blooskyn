@@ -12,6 +12,8 @@ CSS stylesheet for Blooskyn Tattoo website
 /* || General styles */
 * {
   box-sizing: border-box;
+  color: white;
+  max-width: 100%;
 }
 body {
   margin: 20px 0;
@@ -20,11 +22,9 @@ body {
 }
 a {
   text-decoration: none;
-  color: #fff;
 }
 h1 {
   margin: 0;
-  font-family: 'Lobster', cursive;
 }
 ul {
   list-style-type: none;
@@ -34,6 +34,7 @@ ul {
   margin: 0 auto;
   max-width: 1600px;
   display: flex;
+  flex-wrap: wrap;
 }
 .flex-end {
   justify-content: flex-end;
@@ -46,6 +47,7 @@ ul {
 .top-bar select {
   flex: 0 0 auto;
   margin-right: 10px;
+  color: black;
 }
 .top-bar a {
   padding: 0 3px;
@@ -70,6 +72,7 @@ header h1 {
   color: #fff;
   margin-left: 10px;
   line-height: 1.5;
+  font-family: 'Lobster', cursive;
 }
 nav {
   flex: 1 1 auto;
