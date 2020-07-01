@@ -20,6 +20,24 @@
 
 
 {% block main %}
-
+  <section class="about-me">
+    <h1>About Me</h1>
+    <p>Find some information about me.</p>
+  </section>
+  <section class="team-presentation">
+    <article class="personal-presentation">
+      <img 
+        srcset="{{ url_for('static', filename='img/about-me/600_woman-holding-disposable-cup-712513.jpg') }} 600w,
+                {{ url_for('static', filename='img/about-me/1000_woman-holding-disposable-cup-712513.jpg') }} 1000w,
+                {{ url_for('static', filename='img/about-me/1500_woman-holding-disposable-cup-712513.jpg') }} 1500w,
+                {{ url_for('static', filename='img/about-me/2370_woman-holding-disposable-cup-712513.jpg') }} 2370w"
+        sizes=" (max-width: 800px) 640px,
+                (max-width: 2400px) 1920px,
+                (max-width: 3000px) 2400px,
+                3936px"
+        src="{{ url_for('static', filename='img/about-me/1500_woman-holding-disposable-cup-712513.jpg') }}"
+        alt="Clara Tonnelé-Verjus">
+    </article>
+  </section>
 {% endblock %}
 
