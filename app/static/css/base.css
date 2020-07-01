@@ -67,6 +67,9 @@ ul {
   justify-content: space-between;
   background-color: rgb(42, 42, 42);
 }
+.top-header .content-wrapper {
+  flex-wrap: nowrap;
+}
 header h1 {
   flex: 0 0 auto;
   color: #fff;
