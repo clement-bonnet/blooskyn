@@ -22,18 +22,12 @@
     <script src="https://kit.fontawesome.com/275c924d1c.js" crossorigin="anonymous"></script>
     <!-- web app manifest -->
     <!-- <link href="/manifest.webmanifest" rel="manifest"> -->
-    <script>
-      function changeLanguage() {
-        const CHOSEN_LANGUAGE = document.querySelector("select").value;
-        window.location.href = "language/" + CHOSEN_LANGUAGE;
-      }
-    </script>
   </head>
   <body>
     <header>
       <div class="top-bar">
         <div class="content-wrapper flex-end">
-          <select name="language-selector" onchange="changeLanguage()">
+          <select name="language-selector" onchange="location='/language/'+this.value;">
           {% for lang, language in config["LANGUAGES"].items() %}
             <option lang="{{ lang }}" value="{{ lang }}" {{ 'selected' if session.get('language')==lang else '' }}>{{ language }}</option>
           {% endfor %}
