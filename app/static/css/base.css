@@ -49,16 +49,19 @@ ul {
   margin-right: 10px;
   color: black;
 }
-.top-bar a {
-  padding: 0 3px;
-  margin: 0 1px;
-}
-.top-bar a:hover {
-  color: #4CAF50;
+.top-bar option {
+  color: inherit;
 }
 .top-bar i {
-  flex: 1 1 auto;
+  padding: 4px 4px;
+  margin: 0;
 }
+.top-bar i:hover {
+  color: #4CAF50;
+}
+/* .top-bar i {
+  flex: 1 1 auto;
+} */
 
 /* || Navigation bar */
 .top-header {

@@ -3,11 +3,11 @@
 {% block meta %}
   {{ super() }}
   <meta name="keywords" content="blooskyn, tattoo, clara, tonnele, verjus, drawing">
-  <meta name="description" content="Personal website of Clara Tonnelé-Verjus that contains pictures of tattoos she gave.">
+  <meta name="description" content="{{ _('Personal website of Clara Tonnelé-Verjus that contains pictures of tattoos she gave.') }}">
 {% endblock %}
 
 {% block title %}
-  <title>Blooskyn Tattoo, Portfolio of Clara Tonnelé-Verjus</title>
+  <title>{{ _("Blooskyn Tattoo, Portfolio of Clara Tonnelé-Verjus") }}</title>
 {% endblock %}
 
 {% block analytics %}
@@ -21,8 +21,8 @@
 
 {% block main %}
   <section class="about-me">
-    <h1>About Me</h1>
-    <p>Find some information about me.</p>
+    <h1>{{ _("About Me")}}</h1>
+    <p>{{ _("Find some information about me.") }}</p>
   </section>
   <section class="team-presentation">
     <article class="personal-presentation">
@@ -38,7 +38,7 @@
         src="{{ url_for('static', filename='img/about-me/1500_woman-holding-disposable-cup-712513.jpg') }}"
         alt="Clara Tonnelé-Verjus">
       <h2>Clara Tonnelé-Verjus</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rhoncus urna
+      <p>{{ _("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rhoncus urna
         sed semper feugiat. Donec et elit quis quam luctus dictum. Etiam sollicitudin
         justo eros, non rutrum est dignissim a. Sed dapibus nisl vel sem consectetur
         facilisis. Quisque et pellentesque lectus, vel tristique velit. Integer quis
@@ -48,7 +48,7 @@
         Donec a mauris sed ex malesuada pretium pellentesque non nulla. Integer ut
         velit elementum, sollicitudin ipsum vel, dapibus orci. Aliquam tempus viverra
         elit a dignissim. In neque tortor, efficitur scelerisque libero ut, pharetra
-        scelerisque orci. Integer in magna semper, ultrices nisl quis, tempus erat.
+        scelerisque orci. Integer in magna semper, ultrices nisl quis, tempus erat.") }}
       </p>
     </article>
   </section>
