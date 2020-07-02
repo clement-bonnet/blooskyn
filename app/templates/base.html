@@ -27,7 +27,7 @@
     <header>
       <div class="top-bar">
         <div class="content-wrapper flex-end">
-          <select name="language-selector" onchange="location='/language/'+this.value;">
+          <select name="language-selector" onchange="location={{ url_for('set_language', language='') }} + this.value;">
           {% for lang, language in config["LANGUAGES"].items() %}
             <option lang="{{ lang }}" value="{{ lang }}" {{ 'selected' if session.get('language')==lang else '' }}>{{ language }}</option>
           {% endfor %}

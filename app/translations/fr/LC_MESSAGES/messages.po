@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-07-02 11:36+0200\n"
+"POT-Creation-Date: 2020-07-02 20:28+0200\n"
 "PO-Revision-Date: 2020-07-02 08:57+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr\n"
@@ -36,7 +36,7 @@ msgstr "Retour Site"
 msgid "Blooskyn Tattoo, Portfolio of Clara Tonnelé-Verjus"
 msgstr "Blooskyn Tattoo, Portfolio de Clara Tonnelé-Verjus"
 
-#: app/templates/about_me.html:24 app/templates/base.html:44
+#: app/templates/about_me.html:24 app/templates/base.html:45
 msgid "About Me"
 msgstr "À Propos de Moi"
 
@@ -74,7 +74,7 @@ msgstr ""
 msgid "en"
 msgstr "fr"
 
-#: app/templates/base.html:43
+#: app/templates/base.html:44
 msgid "Home"
 msgstr "Accueil"
 
