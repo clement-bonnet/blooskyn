@@ -1,0 +1,90 @@
+# French translations for PROJECT.
+# Copyright (C) 2020 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2020-07-02 11:36+0200\n"
+"PO-Revision-Date: 2020-07-02 08:57+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: app/templates/404.html:6 app/templates/about_me.html:6
+msgid ""
+"Personal website of Clara Tonnelé-Verjus that contains pictures of "
+"tattoos she gave."
+msgstr ""
+
+#: app/templates/404.html:10 app/templates/404.html:24
+msgid "Page Not Found"
+msgstr "Page Non Trouvée"
+
+#: app/templates/404.html:26
+msgid "Return Home"
+msgstr "Retour Site"
+
+#: app/templates/about_me.html:10 app/templates/index.html:11
+msgid "Blooskyn Tattoo, Portfolio of Clara Tonnelé-Verjus"
+msgstr "Blooskyn Tattoo, Portfolio de Clara Tonnelé-Verjus"
+
+#: app/templates/about_me.html:24 app/templates/base.html:44
+msgid "About Me"
+msgstr "À Propos de Moi"
+
+#: app/templates/about_me.html:25
+msgid "Find some information about me."
+msgstr "Quelques informations à propos de moi."
+
+#: app/templates/about_me.html:41
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rhoncus "
+"urna\n"
+"        sed semper feugiat. Donec et elit quis quam luctus dictum. Etiam "
+"sollicitudin\n"
+"        justo eros, non rutrum est dignissim a. Sed dapibus nisl vel sem "
+"consectetur\n"
+"        facilisis. Quisque et pellentesque lectus, vel tristique velit. "
+"Integer quis\n"
+"        eros ut ex varius condimentum. Integer tincidunt est a lectus "
+"convallis\n"
+"        gravida sed eget diam. Sed justo neque, ornare a lectus in, "
+"condimentum\n"
+"        suscipit nulla. Nullam rutrum ornare justo, nec bibendum augue "
+"sodales at.\n"
+"        Donec a mauris sed ex malesuada pretium pellentesque non nulla. "
+"Integer ut\n"
+"        velit elementum, sollicitudin ipsum vel, dapibus orci. Aliquam "
+"tempus viverra\n"
+"        elit a dignissim. In neque tortor, efficitur scelerisque libero "
+"ut, pharetra\n"
+"        scelerisque orci. Integer in magna semper, ultrices nisl quis, "
+"tempus erat."
+msgstr ""
+
+#: app/templates/base.html:2
+msgid "en"
+msgstr "fr"
+
+#: app/templates/base.html:43
+msgid "Home"
+msgstr "Accueil"
+
+#: app/templates/index.html:6
+msgid ""
+"Personal website of Clara Tonnelé-Verjus that\n"
+"    contains pictures of tattoos she gave."
+msgstr ""
+
+#: app/templates/index.html:34
+msgid "Professional giving a tattoo in black and white"
+msgstr "Un tatoueur professionnel tatoue en noir et blanc"
+
