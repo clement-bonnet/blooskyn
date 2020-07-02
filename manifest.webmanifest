@@ -1,5 +1,4 @@
 {
-  "lang": "en",
   "name": "Blooskyn Tattoo",
   "short_name": "blooskyn_tattoo",
   "description": "Personal website of Clara Tonnelé-Verjus that contains pictures of tattoos she gave.",
@@ -16,7 +15,7 @@
       "type": "image/png"
     }
   ],
-  "start_url": "templates/index.html",
+  "start_url": "/",
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
   "display": "standalone"
