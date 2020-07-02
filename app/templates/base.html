@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ _('en') }}">
   <head>
     {% block meta %}
       <meta charset="UTF-8">
@@ -21,15 +21,22 @@
     <link href="{{ url_for('static', filename='ico/favicon-16x16.png') }}" rel="icon" type="image/png" sizes="16x16">
     <script src="https://kit.fontawesome.com/275c924d1c.js" crossorigin="anonymous"></script>
     <!-- web app manifest -->
-    <link href="site.webmanifest" rel="manifest">
+    <!-- <link href="/manifest.webmanifest" rel="manifest"> -->
+    <script>
+      function changeLanguage() {
+        const CHOSEN_LANGUAGE = document.querySelector("select").value;
+        window.location.href = "language/" + CHOSEN_LANGUAGE;
+      }
+    </script>
   </head>
   <body>
     <header>
       <div class="top-bar">
         <div class="content-wrapper flex-end">
-          <select name="language">
-            <option lang="en" value="EN">English</option>
-            <option lang="fr" value="FR">Français</option>
+          <select name="language-selector" onchange="changeLanguage()">
+          {% for lang, language in config["LANGUAGES"].items() %}
+            <option lang="{{ lang }}" value="{{ lang }}" {{ 'selected' if session.get('language')==lang else '' }}>{{ language }}</option>
+          {% endfor %}
           </select>
           <a href="https://www.facebook.com/blooskyn" target="_blank"><i class="fab fa-facebook-f"></i></a>
           <a href="https://www.instagram.com/blooskyn_tattoo/" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -40,8 +47,8 @@
           <h1>Blooskyn Tattoo</h1>
           <nav>
             <ul class="flex-container-nav">
-              <li><a href="{{ url_for('index') }}">Home</a></li>
-              <li><a href="{{ url_for('about_me') }}">About Me</a></li>
+              <li><a href="{{ url_for('index') }}">{{ _("Home") }}</a></li>
+              <li><a href="{{ url_for('about_me') }}">{{ _("About Me") }}</a></li>
             </ul>
           </nav>
         </div>

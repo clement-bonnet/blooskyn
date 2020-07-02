@@ -3,11 +3,11 @@
 {% block meta %}
   {{ super() }}
   <meta name="keywords" content="blooskyn, tattoo, clara, tonnele, verjus, drawing">
-  <meta name="description" content="Personal website of Clara Tonnelé-Verjus that contains pictures of tattoos she gave.">
+  <meta name="description" content="{{ _('Personal website of Clara Tonnelé-Verjus that contains pictures of tattoos she gave.') }}">
 {% endblock %}
 
 {% block title %}
-  <title>Page Not Found</title>
+  <title>{{ _("Page Not Found") }}</title>
 {% endblock %}
 
 {% block analytics %}
@@ -21,8 +21,8 @@
 
 {% block main %}
 <section>
-  <strong>Page Not Found</strong>
+  <strong>{{ _("Page Not Found") }}</strong>
   <br>
-  <p><a href="{{ url_for('index') }}">Return Home</a></p>
+  <p><a href="{{ url_for('index') }}">{{ _("Return Home") }}</a></p>
 </section>
 {% endblock %}
