@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-07-02 20:28+0200\n"
+"POT-Creation-Date: 2020-07-10 17:15+0200\n"
 "PO-Revision-Date: 2020-07-02 08:57+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr\n"
@@ -18,7 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
 
-#: app/templates/404.html:6 app/templates/about_me.html:6
+#: app/templates/404.html:6 app/templates/form.html:6
+#: app/templates/gallery.html:6
 msgid ""
 "Personal website of Clara Tonnelé-Verjus that contains pictures of "
 "tattoos she gave."
@@ -32,19 +33,27 @@ msgstr "Page Non Trouvée"
 msgid "Return Home"
 msgstr "Retour Site"
 
-#: app/templates/about_me.html:10 app/templates/index.html:11
+#: app/templates/base.html:2
+msgid "en"
+msgstr "fr"
+
+#: app/templates/base.html:44
+msgid "Gallery"
+msgstr "Galerie"
+
+#: app/templates/base.html:45 app/templates/form.html:24
+msgid "Form"
+msgstr "Questionnaire"
+
+#: app/templates/form.html:10 app/templates/gallery.html:10
 msgid "Blooskyn Tattoo, Portfolio of Clara Tonnelé-Verjus"
 msgstr "Blooskyn Tattoo, Portfolio de Clara Tonnelé-Verjus"
 
-#: app/templates/about_me.html:24 app/templates/base.html:45
-msgid "About Me"
-msgstr "À Propos de Moi"
-
-#: app/templates/about_me.html:25
+#: app/templates/form.html:25
 msgid "Find some information about me."
 msgstr "Quelques informations à propos de moi."
 
-#: app/templates/about_me.html:41
+#: app/templates/form.html:41
 msgid ""
 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rhoncus "
 "urna\n"
@@ -70,21 +79,18 @@ msgid ""
 "tempus erat."
 msgstr ""
 
-#: app/templates/base.html:2
-msgid "en"
-msgstr "fr"
-
-#: app/templates/base.html:44
-msgid "Home"
-msgstr "Accueil"
-
-#: app/templates/index.html:6
-msgid ""
-"Personal website of Clara Tonnelé-Verjus that\n"
-"    contains pictures of tattoos she gave."
-msgstr ""
-
-#: app/templates/index.html:34
+#: app/templates/gallery.html:33
 msgid "Professional giving a tattoo in black and white"
 msgstr "Un tatoueur professionnel tatoue en noir et blanc"
+
+#~ msgid "About Me"
+#~ msgstr "À Propos de Moi"
+
+#~ msgid "Home"
+#~ msgstr "Accueil"
+
+#~ msgid ""
+#~ "Personal website of Clara Tonnelé-Verjus that\n"
+#~ "    contains pictures of tattoos she gave."
+#~ msgstr ""
 

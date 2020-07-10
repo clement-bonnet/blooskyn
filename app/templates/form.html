@@ -15,13 +15,13 @@
 
 {% block stylesheet %}
   {{ super() }}
-  <link href="{{ url_for('static', filename='css/about_me.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/form.css') }}" rel="stylesheet">
 {% endblock %}
 
 
 {% block main %}
   <section class="about-me">
-    <h1>{{ _("About Me")}}</h1>
+    <h1>{{ _("Form")}}</h1>
     <p>{{ _("Find some information about me.") }}</p>
   </section>
   <section class="team-presentation">
